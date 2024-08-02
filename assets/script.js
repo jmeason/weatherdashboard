@@ -1,11 +1,11 @@
-const cityInput=document.getElementById('#city-input');
-const APIKey = '5cf9d0cffd4e753203b4eab9872350cf';
-//document.getElementById('#search-btn').addEventListener('click', fetchWeather)
-const searchBtn = document.getElementById('search-btn');
-const weatherContainer = document.getElementById('weather-container');
+const weatherApiKey = "ab07125a22cc73e0964ebddfb1d89370";
+const weatherQueryUrl = "https://api.openweathermap.org";
+const city = "";
 
-
-const weatherURL='https://openweathermap.org/api'
+const clickSearch = document.getElementById("search-btn");
+const currentCard = document.getElementById("current-card");
+const inputBox = document.getElementById("search-bar");
+const futureWeatherCards = document.getElementById("five-day-cards");
 
  
     function displayWeather (data) {
